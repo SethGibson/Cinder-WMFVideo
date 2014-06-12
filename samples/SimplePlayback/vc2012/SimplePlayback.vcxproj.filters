@@ -48,7 +48,7 @@
     <ClCompile Include="..\..\..\src\presenter\scheduler.cpp">
       <Filter>WMFVideo\presenter</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\src\presenter\Helpers.cpp">
+    <ClCompile Include="..\..\..\src\presenter\PresenterHelpers.cpp">
       <Filter>WMFVideo\presenter</Filter>
     </ClCompile>
   </ItemGroup>
@@ -61,9 +61,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\ciWMFVideoPlayerUtils.h">
       <Filter>WMFVideo</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\src\presenter\Helpers.h">
-      <Filter>WMFVideo\presenter</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\src\presenter\PresentEngine.h">
       <Filter>WMFVideo\presenter</Filter>
@@ -124,6 +121,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\src\presenter\common\linklist.h">
       <Filter>WMFVideo\presenter\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\presenter\PresenterHelpers.h">
+      <Filter>WMFVideo\presenter</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
