@@ -1,4 +1,5 @@
-#include "cinder/app/AppNative.h"
+#include "cinder/app/App.h"
+#include "cinder/app/RendererGl.h"
 #include "cinder/gl/gl.h"
 #include "../../../src/ciWMFVideoPlayer.h"
 
@@ -6,7 +7,8 @@ using namespace ci;
 using namespace ci::app;
 using namespace std;
 
-class SimplePlaybackApp : public AppNative {
+class SimplePlaybackApp : public App
+{
 	bool videoSetup;
 	ciWMFVideoPlayer video1;
   public:
@@ -41,4 +43,4 @@ void SimplePlaybackApp::draw()
 	video1.draw( 0, 0 );
 }
 
-CINDER_APP_NATIVE( SimplePlaybackApp, RendererGl )
+CINDER_APP( SimplePlaybackApp, RendererGl )

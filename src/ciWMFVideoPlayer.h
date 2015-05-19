@@ -24,15 +24,6 @@
 class ciWMFVideoPlayer;
 class CPlayer;
 
-namespace cinder
-{
-	namespace gl
-	{
-		class Texture;
-		typedef std::shared_ptr<Texture> TextureRef;
-	}
-}
-
 class ciWMFVideoPlayer {
 
 	private:

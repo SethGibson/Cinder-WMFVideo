@@ -1,5 +1,6 @@
+#include <sstream>
 #include "cinder/app/App.h"
-#include "cinder/app/AppBasic.h"
+#include "cinder/gl/gl.h"
 #include "cinder/gl/Texture.h"
 #include "ciWMFVideoPlayerUtils.h"
 #include "ciWMFVideoPlayer.h"
@@ -105,6 +106,7 @@ void ciWMFVideoPlayer::forceExit()
 		gl::Texture::Format format;
 		format.setInternalFormat(GL_RGBA);
 		format.setTargetRect();
+		
 		_tex = gl::Texture::create(_width,_height, format);
 		//_tex.allocate(_width,_height,GL_RGBA,true);
 		_player->m_pEVRPresenter->createSharedTexture(_width, _height, _tex->getId());
@@ -122,6 +124,7 @@ void ciWMFVideoPlayer::forceExit()
 			gl::Texture::Format format;
 			format.setInternalFormat(GL_RGBA);
 			format.setTargetRect();
+
 			_tex = gl::Texture::create(_width,_height, format);
 			//_tex.allocate(_width,_height,GL_RGBA,true);
 			_player->m_pEVRPresenter->createSharedTexture(_width, _height, _tex->getId());
